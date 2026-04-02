@@ -20,7 +20,7 @@ The dataset is highly imbalanced, so the main focus was on proper evaluation and
 
 
 ## Approach
-I trained an XGBoost classifier and experimented with hyperparameters to control overfitting.
+I trained LogisticRegression, RaandomForest and XGBoost classifier on diffrent number of features and experimented with hyperparameters to get better results. 
 
 Instead of relying on accuracy, I evaluated the model using:
 - Precision  
@@ -45,8 +45,4 @@ preds = (prob >= threshold).astype(int)
 ## Key Takeaways
 - Accuracy is not reliable for imbalanced datasets
 - Threshold tuning can significantly impact performance  
-- XGBoost requires regularization to avoid overfitting  
-
-
-## Conclusion
-This project helped me better understand model evaluation, trade-offs, and how to make machine learning models more practical.
+- XGBoost requires regularization to avoid overfitting 
